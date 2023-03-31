@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Honours Project currently</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+
+  </head>
+  <body>
+    <h1>Honours new Project</h1>
+    <input type="text" id="channel-name" placeholder="Enter channel name">
+    <button id="search-button">Search</button>
+    <br>
+    <input type="text" id="own-link" placeholder="Enter URL">
+    <button id="URL-button">Submit URL</button>
+    <div id="message"></div>
+
+    <div class="dropdown">
+      <button id="dropdownBtn" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="Saved_Links.html">Saved Links</a>
+        <br>
+        <a href="#about">About</a>
+        <br>
+        <a href="#contact">Contact</a>
+        <a><button onclick="changepage()">Your Saved Links</button></a>
+      </div>
+    </div>
+    
+
+    <script type="module" src="right_popup.js" defer></script>
+    <script src="links.js" defer></script>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+/* position dropdowen menu*/
+.dropdown{
+    
+        position: absolute;
+        top: 0;
+        right: 0;    
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+    display: none;
+  }
+  
+  /* Show the dropdown content when the 'show' class is added */
+  .show {
+    display: block;
+  }
+  
