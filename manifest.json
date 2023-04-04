@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Fucking_Work",
+  "name": "Work",
   "version": "1.0",
-  "description": "Honours Project",
+  "description": "Project",
   
   "permissions": [
     "activeTab",

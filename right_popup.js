@@ -98,22 +98,6 @@ async function getVideoDescriptions(channelId, numberOfVideos) {
 
 
 
-// Get the dropdown button and dropdown content elements
-const dropdownBtn = document.querySelector('#dropdownBtn');
-const dropdownContent = document.querySelector('.dropdown-content');
 
-// Add an event listener to the dropdown button
-dropdownBtn?.addEventListener('click', function() {
-  // Toggle the 'show' class on the dropdown content element
-  dropdownContent.classList.toggle('show');
-});
-
-// Close the dropdown content if the user clicks outside of it
-window.addEventListener('click', function(event) {
-  if (!event.target.matches('#dropdownBtn')) {
-    // Hide the dropdown content
-    dropdownContent.classList.remove('show');
-  }
-});
 
 
