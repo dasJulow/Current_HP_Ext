@@ -95,3 +95,12 @@ async function getVideoDescriptions(channelId, numberOfVideos) {
 
 // add event listener for form submit
   document.getElementById('search-button')?.addEventListener('click', handleSubmit);
+  
+
+  const mySavedLinksButton = document.querySelector('#my_saved_links');
+  if (mySavedLinksButton) {
+    mySavedLinksButton.addEventListener('click', () => {
+      window.open('saved_links.html', '_blank');
+    });
+  }
+  

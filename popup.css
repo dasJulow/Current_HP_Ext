@@ -1,18 +1,144 @@
-/* position dropdowen menu*/
-.dropdown{
-    
-        position: absolute;
-        top: 0;
-        right: 0;    
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: white;
+} 
+
+
+
+
+
+h1 {
+  color: #3c76b8;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0 0 30px;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
-/* Hide the dropdown content by default */
-.dropdown-content {
-    display: none;
-  }
+
+
+
+.input_field{
+  border-radius: 10px;
+  height: 30px;
+  text-align: center;
+}
+
+
+
+.btn {
+  display: block;
+  border: 1px solid transparent;
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin: 0 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__color{
+  display: flex;
+  border: 0px transparent;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  justify-content: center;
+}
+
+
+.btn_search {
+  background-color: #4286f490;
+  color: #fff;
+  font-size: 15px;
+  height: 20px;
+  width: 80%;
+  border-radius: 5px;
+  text-align: center;
+  margin:  10px;
+  transition: transform 0.3s;
+}
+
+.btn_search:hover {
+  animation-name: searching;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+  background-color: #3c76b8;
+}
+
+
+
+
+.btn__sign_out {
+  background-color: rgba(255, 0, 0, 0.862);
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn__sign_out:hover {
+  background-color: #fff;
+  color: rgba(255, 0, 0, 0.862);
+  border: 1px solid rgba(255, 0, 0, 0.862);
+}
+
+.btn_saved_links {
+  background-color: #e0a800eb;
+  color: #fff;
+  font-size: 18px;
+}
+.btn_saved_links:hover {
+  background-color: #fff;
+  color: #e0a800eb;
+  border: 1px solid #e0a800eb;
   
-  /* Show the dropdown content when the 'show' class is added */
-  .show {
-    display: block;
+}
+#my_saved_links:hover {
+  animation-name: choosing;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+}
+
+#my_saved_links {
+  width: 100%;
+}
+
+#sign_out{
+  width: 100%;
+}
+
+@keyframes choosing {
+    100% {
+        transform: rotate(0deg) scale(1.5);
+        box-shadow: 0px 0px 20px 2px white; ;
+    }
+}
+
+@keyframes searching {
+  100% {
+      transform: rotate(0deg) scaleX(1.1);
+      box-shadow: 0px 0px 20px 2px white; 
   }
-  
+}
+
+
+#sign_out:hover {
+    animation-name: choosing;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-duration: 0.4s;
+}
