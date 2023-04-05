@@ -95,9 +95,3 @@ async function getVideoDescriptions(channelId, numberOfVideos) {
 
 // add event listener for form submit
   document.getElementById('search-button')?.addEventListener('click', handleSubmit);
-
-
-
-
-
-
